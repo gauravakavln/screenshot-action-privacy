@@ -19,7 +19,6 @@
             --text: #f3f5e9;
             --muted: #b7c4ba;
             --accent: #55c79a;
-            --accent-dark: #2f9b73;
             --border: #244337;
             --warning: #e5c878;
         }
@@ -75,7 +74,7 @@
         .subtitle {
             margin: 0;
             color: var(--muted);
-            font-size: 17px;
+            font-size: 18px;
         }
 
         .updated {
@@ -141,15 +140,10 @@
             border-left: 4px solid var(--warning);
         }
 
-        .table-wrap {
-            overflow-x: auto;
-            margin: 20px 0;
-        }
-
         table {
             width: 100%;
             border-collapse: collapse;
-            min-width: 600px;
+            margin: 20px 0;
         }
 
         th,
@@ -163,6 +157,10 @@
         th {
             background: var(--surface-2);
             color: var(--accent);
+        }
+
+        .table-wrap {
+            overflow-x: auto;
         }
 
         footer {
@@ -192,6 +190,10 @@
             .card {
                 padding: 18px;
             }
+
+            table {
+                min-width: 600px;
+            }
         }
     </style>
 </head>
@@ -200,9 +202,14 @@
 
 <header>
     <div class="container">
-        <div class="brand">Age of Graphics</div>
 
-        <h1>Privacy Policy</h1>
+        <div class="brand">
+            Age of Graphics
+        </div>
+
+        <h1>
+            Privacy Policy
+        </h1>
 
         <p class="subtitle">
             Screenshot Action
@@ -211,551 +218,867 @@
         <p class="updated">
             Effective Date: September 25, 2026
         </p>
+
     </div>
 </header>
 
+
 <main>
-    <div class="container">
 
-        <section>
-            <h2>1. Introduction</h2>
+<div class="container">
+
+    <!-- 1 -->
+
+    <section>
+
+        <h2>1. Introduction</h2>
+
+        <p>
+            This Privacy Policy explains how Screenshot Action
+            ("Screenshot Action", "the App", "we", "us", or "our"),
+            developed by Age of Graphics, handles information when you
+            use the App.
+        </p>
+
+        <p>
+            Screenshot Action is an AI-powered screenshot intelligence
+            application designed to analyze screenshots and turn their
+            contents into useful information, summaries, structured data,
+            smart actions, reminders, and other features.
+        </p>
+
+        <p>
+            This Privacy Policy explains what information may be processed,
+            why it is processed, how AI processing works, and what choices
+            you have.
+        </p>
+
+    </section>
+
+
+    <!-- 2 -->
+
+    <section>
+
+        <h2>2. Information We Process</h2>
+
+        <p>
+            Screenshot Action primarily processes information contained
+            within screenshots that you intentionally provide to the App.
+        </p>
+
+        <p>
+            Depending on the screenshot, this information may include:
+        </p>
+
+        <ul>
+
+            <li>Text visible in screenshots.</li>
+
+            <li>Names and contact information.</li>
+
+            <li>Phone numbers and email addresses.</li>
+
+            <li>UPI IDs and payment information.</li>
+
+            <li>Bank or transaction references.</li>
+
+            <li>Addresses and location-related information.</li>
+
+            <li>Order and tracking information.</li>
+
+            <li>Travel and booking information.</li>
+
+            <li>Dates, times, and calendar information.</li>
+
+            <li>QR codes and barcodes.</li>
+
+            <li>URLs and other identifiers.</li>
+
+            <li>Other information visible in the screenshot.</li>
+
+        </ul>
+
+        <p>
+            The exact information processed depends on the screenshot
+            and the features you choose to use.
+        </p>
+
+    </section>
+
+
+    <!-- 3 -->
+
+    <section>
+
+        <h2>3. AI-Powered Screenshot Analysis</h2>
+
+        <div class="card important">
 
             <p>
-                This Privacy Policy explains how Screenshot Action
-                ("Screenshot Action", "the App", "we", "us", or "our"),
-                developed by Age of Graphics, handles information when you
-                use the App.
+                <strong>
+                    Screenshot Action uses AI as its primary screenshot
+                    intelligence system.
+                </strong>
+            </p>
+
+        </div>
+
+        <p>
+            When you request AI analysis, Screenshot Action sends the
+            screenshot and supporting information required for analysis
+            to the AI service configured for the App.
+        </p>
+
+        <p>
+            The AI system may analyze the screenshot to produce:
+        </p>
+
+        <ul>
+
+            <li>Corrected or structured OCR text.</li>
+
+            <li>Screenshot summaries.</li>
+
+            <li>Screenshot categories.</li>
+
+            <li>Structured information and facts.</li>
+
+            <li>Payment and expense information.</li>
+
+            <li>Contact information.</li>
+
+            <li>Travel and booking information.</li>
+
+            <li>Dates and events.</li>
+
+            <li>URLs and identifiers.</li>
+
+            <li>Suggested Smart Actions.</li>
+
+            <li>Other useful information derived from the screenshot.</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- 4 -->
+
+    <section>
+
+        <h2>4. Google Gemini API</h2>
+
+        <p>
+            Screenshot Action currently supports Google Gemini for
+            AI-powered screenshot analysis.
+        </p>
+
+        <p>
+            To use AI functionality, you may provide your own Gemini API
+            key ("BYOK" or "Bring Your Own Key").
+        </p>
+
+        <p>
+            When you request AI analysis, the App communicates with the
+            Gemini API using the API key configured by you.
+        </p>
+
+        <p>
+            Screenshot Action does not operate a shared Gemini API key
+            for users.
+        </p>
+
+        <p>
+            Screenshot Action also does not operate its own backend
+            server that receives and stores your screenshots for AI
+            processing in the current version.
+        </p>
+
+        <div class="card warning">
+
+            <p>
+                <strong>
+                    Important:
+                </strong>
+                When you use AI analysis, information contained in your
+                screenshot is transmitted to Google's Gemini service for
+                processing.
+            </p>
+
+        </div>
+
+        <p>
+            Your use of Google Gemini is also subject to Google's
+            applicable terms, policies, and privacy practices.
+        </p>
+
+        <p>
+            For information about Google's Gemini API, please refer to
+            Google's official documentation and applicable privacy
+            documentation.
+        </p>
+
+    </section>
+
+
+    <!-- 5 -->
+
+    <section>
+
+        <h2>5. What Screenshot Action Does Not Do</h2>
+
+        <p>
+            Screenshot Action does not:
+        </p>
+
+        <ul>
+
+            <li>
+                Sell your screenshots or extracted information.
+            </li>
+
+            <li>
+                Create advertising profiles from your screenshots.
+            </li>
+
+            <li>
+                Operate a user-facing cloud gallery for your screenshots.
+            </li>
+
+            <li>
+                Maintain a central Screenshot Action database containing
+                your screenshots in the current version.
+            </li>
+
+            <li>
+                Require you to create an Age of Graphics account to use
+                the core application.
+            </li>
+
+        </ul>
+
+        <p>
+            AI processing is performed through the AI provider selected
+            and configured for the App.
+        </p>
+
+    </section>
+
+
+    <!-- 6 -->
+
+    <section>
+
+        <h2>6. API Key Security</h2>
+
+        <p>
+            If you configure your own Gemini API key, Screenshot Action
+            stores the key locally on your Android device using Android's
+            secure storage mechanisms.
+        </p>
+
+        <p>
+            The API key is not intentionally uploaded to an Age of
+            Graphics server because Screenshot Action does not require
+            such a backend for the current AI architecture.
+        </p>
+
+        <p>
+            You are responsible for keeping your API key secure and for
+            following Google's recommendations regarding API key security
+            and usage.
+        </p>
+
+    </section>
+
+
+    <!-- 7 -->
+
+    <section>
+
+        <h2>7. Local Device Processing</h2>
+
+        <p>
+            Although Screenshot Action's screenshot intelligence is
+            AI-powered, some supporting functions operate directly on
+            your Android device.
+        </p>
+
+        <p>
+            Depending on the feature you use, these may include:
+        </p>
+
+        <ul>
+
+            <li>Screenshot editing.</li>
+
+            <li>Privacy redaction.</li>
+
+            <li>PDF generation.</li>
+
+            <li>Screenshot cleanup.</li>
+
+            <li>Duplicate detection.</li>
+
+            <li>Temporary image processing.</li>
+
+            <li>Preparing files for sharing.</li>
+
+        </ul>
+
+        <p>
+            These local operations do not by themselves mean that the
+            information is transmitted to Age of Graphics.
+        </p>
+
+    </section>
+
+
+    <!-- 8 -->
+
+    <section>
+
+        <h2>8. Privacy-Safe Sharing and Redaction</h2>
+
+        <p>
+            Screenshot Action provides tools that can help identify and
+            hide potentially sensitive information before you share a
+            screenshot.
+        </p>
+
+        <p>
+            Depending on the feature, potentially sensitive information
+            may include:
+        </p>
+
+        <ul>
+
+            <li>Phone numbers.</li>
+
+            <li>Email addresses.</li>
+
+            <li>UPI IDs.</li>
+
+            <li>Account or transaction identifiers.</li>
+
+            <li>Addresses.</li>
+
+            <li>QR codes.</li>
+
+            <li>Order or tracking numbers.</li>
+
+            <li>Other potentially sensitive information.</li>
+
+        </ul>
+
+        <p>
+            Privacy detection and redaction are designed as assistance
+            tools and may not identify every sensitive item.
+        </p>
+
+        <p>
+            You should always review a screenshot before sharing it.
+        </p>
+
+    </section>
+
+
+    <!-- 9 -->
+
+    <section>
+
+        <h2>9. Smart Actions</h2>
+
+        <p>
+            Screenshot Action may generate suggested actions from
+            information identified by the AI system.
+        </p>
+
+        <p>
+            Examples include:
+        </p>
+
+        <ul>
+
+            <li>Opening a URL.</li>
+
+            <li>Copying detected information.</li>
+
+            <li>Calling or messaging a detected phone number.</li>
+
+            <li>Opening a location in Maps.</li>
+
+            <li>Creating a reminder.</li>
+
+            <li>Creating calendar-related actions.</li>
+
+            <li>Opening supported payment or UPI actions.</li>
+
+        </ul>
+
+        <p>
+            Smart Actions are generated from interpreted screenshot
+            information and may contain errors.
+        </p>
+
+        <p>
+            You should verify important information before taking a
+            consequential action.
+        </p>
+
+    </section>
+
+
+    <!-- 10 -->
+
+    <section>
+
+        <h2>10. AI Accuracy and Financial Information</h2>
+
+        <p>
+            AI systems can make mistakes.
+        </p>
+
+        <p>
+            Screenshot Action does not guarantee that AI-generated OCR,
+            summaries, categories, payment amounts, UPI IDs, phone
+            numbers, addresses, dates, travel information, expense
+            information, or other extracted information will always be
+            accurate.
+        </p>
+
+        <p>
+            You should independently verify important information,
+            especially before making payments, transferring money,
+            contacting someone, booking travel, deleting information,
+            or performing another consequential action.
+        </p>
+
+        <p>
+            Screenshot Action is not a financial adviser and does not
+            provide financial advice.
+        </p>
+
+    </section>
+
+
+    <!-- 11 -->
+
+    <section>
+
+        <h2>11. Data Storage</h2>
+
+        <p>
+            Screenshot Action does not operate a cloud storage system
+            for users' screenshots in the current version.
+        </p>
+
+        <p>
+            Screenshots may temporarily exist on your Android device
+            because of Android's normal file handling and because you
+            intentionally imported, created, edited, exported, or saved
+            them.
+        </p>
+
+        <p>
+            Screenshot Action does not intentionally upload screenshots
+            to an Age of Graphics storage server for permanent storage.
+        </p>
+
+        <p>
+            AI requests are sent to the configured AI provider for
+            processing rather than being stored in an Age of Graphics
+            screenshot database.
+        </p>
+
+    </section>
+
+
+    <!-- 12 -->
+
+    <section>
+
+        <h2>12. Data Retention</h2>
+
+        <p>
+            Screenshot Action itself does not maintain a central
+            server-side screenshot database in the current version.
+        </p>
+
+        <p>
+            Information that exists on your Android device remains
+            subject to your device's storage and deletion controls.
+        </p>
+
+        <p>
+            Information transmitted to Google Gemini is subject to
+            Google's applicable policies, processing practices, and
+            retention rules.
+        </p>
+
+        <p>
+            Deleting a screenshot from your device does not necessarily
+            delete information that may already have been processed by
+            a third-party AI provider.
+        </p>
+
+    </section>
+
+
+    <!-- 13 -->
+
+    <section>
+
+        <h2>13. Data Deletion</h2>
+
+        <p>
+            You control screenshots and other files stored on your
+            Android device.
+        </p>
+
+        <p>
+            You may delete screenshots using Android's file management
+            features or the screenshot cleanup functionality provided
+            by the App.
+        </p>
+
+        <p>
+            You may also uninstall Screenshot Action to remove its
+            application data, subject to Android's handling of files
+            that you separately saved or exported to shared storage.
+        </p>
+
+        <p>
+            If information has already been transmitted to a third-party
+            AI provider, deleting the local screenshot does not
+            automatically control that provider's data retention.
+        </p>
+
+        <p>
+            For privacy questions or requests, contact:
+        </p>
+
+        <p class="contact">
+
+            <a href="mailto:ageofgraphics2024@gmail.com">
+                ageofgraphics2024@gmail.com
+            </a>
+
+        </p>
+
+    </section>
+
+
+    <!-- 14 -->
+
+    <section>
+
+        <h2>14. Sharing With Other Applications</h2>
+
+        <p>
+            Screenshot Action can use Android's standard sharing
+            mechanisms when you explicitly choose to share a screenshot,
+            text, or generated information.
+        </p>
+
+        <p>
+            The application or service you select may receive the
+            information you choose to share.
+        </p>
+
+        <p>
+            Once information is shared with another application,
+            that application's own privacy policy and terms apply.
+        </p>
+
+    </section>
+
+
+    <!-- 15 -->
+
+    <section>
+
+        <h2>15. Third-Party Services</h2>
+
+        <div class="table-wrap">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Service</th>
+                        <th>Purpose</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            Google Gemini API
+                        </td>
+
+                        <td>
+                            Optional AI-powered screenshot analysis
+                            when configured and requested by the user.
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            Android Share Sheet
+                        </td>
+
+                        <td>
+                            Sharing information with an application
+                            selected by the user.
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            Android system services
+                        </td>
+
+                        <td>
+                            Device functionality required by the App,
+                            including file handling and system actions.
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <p>
+            Third-party services may have their own privacy policies,
+            terms, security practices, and data retention policies.
+        </p>
+
+    </section>
+
+
+    <!-- 16 -->
+
+    <section>
+
+        <h2>16. Permissions</h2>
+
+        <p>
+            Screenshot Action may request Android permissions or use
+            Android system mechanisms when required for features you
+            choose to use.
+        </p>
+
+        <p>
+            The exact permissions requested by the App are determined
+            by the installed version and the Android operating system.
+        </p>
+
+        <p>
+            We do not use permissions to intentionally collect unrelated
+            personal information.
+        </p>
+
+    </section>
+
+
+    <!-- 17 -->
+
+    <section>
+
+        <h2>17. Children's Privacy</h2>
+
+        <p>
+            Screenshot Action is not specifically directed toward
+            children.
+        </p>
+
+        <p>
+            We do not knowingly create user profiles for children or
+            intentionally request personal information from children
+            for account creation.
+        </p>
+
+        <p>
+            If you believe that a child has provided personal information
+            to us, please contact us.
+        </p>
+
+    </section>
+
+
+    <!-- 18 -->
+
+    <section>
+
+        <h2>18. Your Choices</h2>
+
+        <ul>
+
+            <li>
+                You decide whether to use AI-powered analysis.
+            </li>
+
+            <li>
+                You decide whether to configure your own Gemini API key.
+            </li>
+
+            <li>
+                You decide which screenshots to provide to the App.
+            </li>
+
+            <li>
+                You decide when to share screenshots or extracted
+                information with other applications.
+            </li>
+
+            <li>
+                You can delete screenshots stored on your device.
+            </li>
+
+            <li>
+                You can review privacy-redaction results before sharing.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- 19 -->
+
+    <section>
+
+        <h2>19. Security</h2>
+
+        <p>
+            We use reasonable technical measures appropriate to the
+            design of Screenshot Action to protect information handled
+            by the App.
+        </p>
+
+        <p>
+            API credentials configured by users are stored locally using
+            Android secure storage mechanisms.
+        </p>
+
+        <p>
+            Communications with supported online AI services use the
+            security mechanisms provided by the underlying HTTPS/API
+            infrastructure.
+        </p>
+
+        <p>
+            However, no electronic storage or transmission system can
+            be guaranteed to be completely secure.
+        </p>
+
+    </section>
+
+
+    <!-- 20 -->
+
+    <section>
+
+        <h2>20. Changes to This Privacy Policy</h2>
+
+        <p>
+            We may update this Privacy Policy when the App's features,
+            architecture, data practices, or legal requirements change.
+        </p>
+
+        <p>
+            The latest version will be published at this URL.
+        </p>
+
+        <p>
+            The effective date shown at the beginning of this policy
+            indicates when the current version became effective.
+        </p>
+
+    </section>
+
+
+    <!-- 21 -->
+
+    <section>
+
+        <h2>21. Contact Us</h2>
+
+        <div class="card">
+
+            <p>
+                <strong>
+                    Screenshot Action
+                </strong>
             </p>
 
             <p>
-                Screenshot Action is designed to help users understand,
-                organize, edit, clean up, share, and take actions from
-                screenshots.
+                <strong>
+                    Developer:
+                </strong>
+                Age of Graphics
             </p>
 
             <p>
-                We designed the App with a local-first approach. Many
-                screenshot processing features operate directly on your
-                Android device. Some optional AI features can send
-                screenshot information to an AI provider when you choose
-                to configure and use those features.
-            </p>
-        </section>
+                <strong>
+                    Privacy Contact:
+                </strong>
 
-
-        <section>
-            <h2>2. Information the App Processes</h2>
-
-            <p>
-                Depending on the features you use, Screenshot Action may
-                process information contained in screenshots or information
-                derived from screenshots.
-            </p>
-
-            <h3>Screenshot and image content</h3>
-
-            <p>
-                Screenshots that you import, share with the App, edit,
-                analyze, organize, or otherwise process may contain
-                information such as text, names, phone numbers, email
-                addresses, payment information, UPI IDs, addresses,
-                booking information, order information, QR codes,
-                barcodes, dates, and other content visible in the image.
-            </p>
-
-            <h3>OCR and extracted information</h3>
-
-            <p>
-                The App may process text detected from screenshots using
-                OCR. Depending on the screenshot, extracted information
-                can include text, dates, numbers, URLs, contact
-                information, payment information, travel information,
-                and other relevant details.
-            </p>
-
-            <h3>App settings and configuration</h3>
-
-            <p>
-                The App may store configuration information required for
-                features you enable, such as theme preferences and AI
-                configuration.
-            </p>
-
-            <h3>Gemini API key</h3>
-
-            <p>
-                If you enable AI features using your own Gemini API key,
-                the key is stored locally on your Android device using
-                Android's secure storage mechanisms.
-            </p>
-
-            <p>
-                Age of Graphics does not operate a shared Gemini API key
-                for users and does not require users to provide their
-                Gemini API key to an Age of Graphics server.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>3. How Screenshot Action Uses Information</h2>
-
-            <p>
-                Information processed by the App is used to provide the
-                functionality you request.
-            </p>
-
-            <ul>
-                <li>Read and understand screenshot text.</li>
-                <li>Generate screenshot summaries.</li>
-                <li>Identify useful information within screenshots.</li>
-                <li>Suggest relevant actions.</li>
-                <li>Detect payment and expense information.</li>
-                <li>Detect QR codes and barcodes.</li>
-                <li>Create reminders or other actions when requested.</li>
-                <li>Identify duplicate or older screenshots for cleanup.</li>
-                <li>Detect potentially sensitive information for privacy redaction.</li>
-                <li>Edit, export, save, or convert screenshots.</li>
-                <li>Create PDF documents from screenshots.</li>
-                <li>Share screenshots or extracted information when you explicitly request sharing.</li>
-            </ul>
-        </section>
-
-
-        <section>
-            <h2>4. Local Processing</h2>
-
-            <div class="card important">
-                <p>
-                    Many Screenshot Action features are designed to operate
-                    directly on your device.
-                </p>
-            </div>
-
-            <p>
-                Depending on the feature and configuration, local processing
-                may include OCR, QR and barcode detection, screenshot
-                cleanup, duplicate detection, privacy redaction, editing,
-                PDF creation, storage management, and other local
-                operations.
-            </p>
-
-            <p>
-                Information processed only locally is not transmitted to
-                Age of Graphics merely because the App processes it on
-                your device.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>5. Optional AI Processing</h2>
-
-            <div class="card warning">
-                <p>
-                    <strong>Important:</strong> AI processing is optional.
-                    When you configure and use AI features, screenshot
-                    information may be sent to the AI provider you have
-                    configured.
-                </p>
-            </div>
-
-            <p>
-                Screenshot Action currently supports a user-provided
-                Gemini API key for AI processing.
-            </p>
-
-            <p>
-                When AI analysis is requested, the App may send the
-                original screenshot image and supporting OCR information
-                to Google's Gemini API using the API key configured by
-                you.
-            </p>
-
-            <p>
-                The AI system may analyze the screenshot to produce
-                information such as OCR text, summaries, categories,
-                entities, structured data, and suggested actions.
-            </p>
-
-            <p>
-                Age of Graphics does not operate a backend server that
-                receives your screenshots for this AI processing in the
-                current version of the App.
-            </p>
-
-            <p>
-                Your use of Gemini is also subject to Google's applicable
-                terms, policies, and privacy practices.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>6. AI Accuracy and User Responsibility</h2>
-
-            <p>
-                AI-generated information can contain errors, omissions,
-                or incorrect interpretations.
-            </p>
-
-            <p>
-                Screenshot Action does not guarantee that AI-generated
-                OCR, summaries, payment amounts, UPI IDs, phone numbers,
-                dates, addresses, travel information, or other extracted
-                information will always be correct.
-            </p>
-
-            <p>
-                You should verify important information before relying on
-                it, particularly information relating to payments,
-                financial transactions, travel, contacts, addresses,
-                appointments, or other consequential actions.
-            </p>
-
-            <p>
-                Suggested Smart Actions are recommendations. The App does
-                not intentionally perform sensitive actions automatically
-                solely because an AI model suggested them.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>7. Privacy Redaction and Privacy-Safe Sharing</h2>
-
-            <p>
-                Screenshot Action includes privacy tools designed to help
-                identify and hide potentially sensitive information before
-                sharing a screenshot.
-            </p>
-
-            <p>
-                Depending on the feature used, the App may identify items
-                such as phone numbers, email addresses, UPI IDs, account
-                identifiers, addresses, QR codes, order information, or
-                other potentially sensitive information.
-            </p>
-
-            <p>
-                Redaction is intended to help protect sensitive information,
-                but automated detection may not identify every sensitive
-                item. You should review the screenshot before sharing it.
-            </p>
-
-            <p>
-                The original screenshot is not intentionally overwritten by
-                the privacy-redaction workflow.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>8. Sharing Information</h2>
-
-            <p>
-                Screenshot Action can use Android's sharing functionality
-                when you explicitly choose to share a screenshot, text,
-                or other information.
-            </p>
-
-            <p>
-                Information shared through Android's Share Sheet may be
-                received by the application or service you select.
-            </p>
-
-            <p>
-                Once you choose to share information with another
-                application or service, that application's own privacy
-                policy and terms may apply.
-            </p>
-
-            <p>
-                Screenshot Action does not control how an external
-                application handles information after you intentionally
-                share it with that application.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>9. Data Storage</h2>
-
-            <p>
-                Screenshot Action may store screenshots, generated files,
-                preferences, history, and other information locally on
-                your Android device when required to provide the features
-                you use.
-            </p>
-
-            <p>
-                The App does not require an Age of Graphics account for
-                the core screenshot functionality described in this
-                policy.
-            </p>
-
-            <p>
-                Local files remain subject to the storage and security
-                controls of your Android device.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>10. Data Retention</h2>
-
-            <p>
-                Data stored locally by Screenshot Action may remain on
-                your device until you delete it, use an App feature that
-                removes it, uninstall the App, or otherwise remove the
-                associated files or application data.
-            </p>
-
-            <p>
-                Screenshot Action does not maintain a central Age of
-                Graphics server database containing your screenshots in
-                the current version.
-            </p>
-
-            <p>
-                Information sent directly to a third-party service, such
-                as Gemini when you use AI processing, is subject to that
-                provider's applicable data handling, retention, and
-                deletion practices.
-            </p>
-
-            <p>
-                Deleting a screenshot from your device does not necessarily
-                delete information that has already been transmitted to a
-                third-party provider.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>11. Data Deletion</h2>
-
-            <p>
-                You can delete screenshots and locally stored information
-                using the App's available deletion and cleanup features,
-                or by deleting the relevant application data from Android.
-            </p>
-
-            <p>
-                You can also uninstall Screenshot Action to remove its
-                locally stored application data, subject to Android's
-                handling of files that may have been separately exported
-                or saved to shared storage.
-            </p>
-
-            <p>
-                If information has been sent directly to a third-party
-                provider through an action you initiated, deletion from
-                Screenshot Action does not automatically control that
-                provider's retention systems.
-            </p>
-
-            <p>
-                For questions about privacy or deletion, contact us at:
-            </p>
-
-            <p class="contact">
                 <a href="mailto:ageofgraphics2024@gmail.com">
                     ageofgraphics2024@gmail.com
                 </a>
             </p>
-        </section>
-
-
-        <section>
-            <h2>12. Security</h2>
 
             <p>
-                We use reasonable technical measures appropriate to the
-                App's design to protect information handled by Screenshot
-                Action.
+                <strong>
+                    Website:
+                </strong>
+
+                <a
+                    href="https://ageofgraphics.in"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    ageofgraphics.in
+                </a>
             </p>
 
-            <p>
-                Gemini API keys configured by users are stored locally
-                using Android secure storage mechanisms.
-            </p>
+        </div>
 
-            <p>
-                Network communications with supported AI services use the
-                security mechanisms provided by the underlying HTTPS/API
-                infrastructure.
-            </p>
+        <p>
+            If you have questions about this Privacy Policy, AI
+            processing, data handling, or privacy-related concerns,
+            please contact us using the email address above.
+        </p>
 
-            <p>
-                No method of electronic storage or transmission can be
-                guaranteed to be completely secure. Users should also
-                protect their Android device and account credentials.
-            </p>
-        </section>
+    </section>
 
+</div>
 
-        <section>
-            <h2>13. Third-Party Services</h2>
-
-            <p>
-                Screenshot Action may interact with third-party services
-                when you explicitly use features that depend on them.
-            </p>
-
-            <div class="table-wrap">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Service</th>
-                            <th>Purpose</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>Google Gemini API</td>
-                            <td>
-                                Optional AI-powered screenshot analysis
-                                when configured and used by the user.
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Android Share Sheet</td>
-                            <td>
-                                Sharing screenshots or extracted information
-                                with an application selected by the user.
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Android system services</td>
-                            <td>
-                                Required operating-system functionality such
-                                as storage, intents, notifications, and
-                                other device features used by the App.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <p>
-                Third-party services may have their own privacy policies,
-                terms, and data retention practices. Users should review
-                the applicable policies of those services.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>14. Children's Privacy</h2>
-
-            <p>
-                Screenshot Action is not specifically directed toward
-                children.
-            </p>
-
-            <p>
-                We do not knowingly request personal information from
-                children for the purpose of creating an account or
-                maintaining a user profile.
-            </p>
-
-            <p>
-                If you believe that a child has provided personal
-                information to us, please contact us so that we can review
-                the situation.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>15. Your Choices</h2>
-
-            <p>
-                You control whether to use optional AI functionality.
-            </p>
-
-            <ul>
-                <li>
-                    You may use local screenshot features without
-                    configuring AI where supported.
-                </li>
-
-                <li>
-                    You may choose whether to configure a Gemini API key.
-                </li>
-
-                <li>
-                    You may delete locally stored screenshots and
-                    application data.
-                </li>
-
-                <li>
-                    You decide when screenshots or extracted information
-                    are shared with other applications.
-                </li>
-
-                <li>
-                    You may review privacy-redaction results before
-                    sharing a protected screenshot.
-                </li>
-            </ul>
-        </section>
-
-
-        <section>
-            <h2>16. Changes to This Privacy Policy</h2>
-
-            <p>
-                We may update this Privacy Policy when the App's features,
-                data practices, or legal requirements change.
-            </p>
-
-            <p>
-                The latest version will be published at this URL with an
-                updated effective date.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>17. Contact Us</h2>
-
-            <div class="card">
-                <p><strong>Screenshot Action</strong></p>
-                <p><strong>Developer:</strong> Age of Graphics</p>
-                <p>
-                    <strong>Privacy Contact:</strong>
-                    <a href="mailto:ageofgraphics2024@gmail.com">
-                        ageofgraphics2024@gmail.com
-                    </a>
-                </p>
-                <p>
-                    <strong>Website:</strong>
-                    <a href="https://ageofgraphics.in" target="_blank" rel="noopener">
-                        ageofgraphics.in
-                    </a>
-                </p>
-            </div>
-
-            <p>
-                For privacy questions, data-handling questions, or requests
-                concerning this Privacy Policy, please contact us using
-                the email address above.
-            </p>
-        </section>
-
-    </div>
 </main>
 
 
 <footer>
+
     <div class="container">
+
         © 2026 Age of Graphics. All rights reserved.
+
     </div>
+
 </footer>
 
 </body>
